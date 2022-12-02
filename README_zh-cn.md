@@ -231,7 +231,7 @@ SIEM on OpenSearch Service将日志保存在索引当中，并每月轮换一次
 |EventBridge events|aes-siem-EventBridgeRuleLambdaMetricsExporter| For executing aes-siem-geoip-downloader every 1 hour|
 |EventBridge events|aes-siem-EsLoaderStopperRule|For passing alarm events to es-loader-stopper|
 |Amazon SNS Topic|aes-siem-alert|被选定为OpenSearch Service中的警报发送目的地|
-|Amazon SNS Subscription|inputd email|作为警报发送目标的电子邮件地址|
+|Amazon SNS Subscription|inputd email|发送告警电子邮件|
 
 ## 资源清理
 
@@ -264,7 +264,7 @@ aws kms delete-alias  --alias-name  "alias/aes-siem-key"
 
 此產品使用MaxMind创建的GeoLite2数据，并遵循 [CC BY-SA 4.0许可证](https://creativecommons.org/licenses/by-sa/4.0/)，详见[https://www.maxmind.com](https://www.maxmind.com)。
 
-This product uses Tor exit list created by The Tor Project, Inc and licensed under [CC BY 3.0 US](https://creativecommons.org/licenses/by/3.0/us/), available from [https://www.torproject.org](https://www.torproject.org)
+此产品使用 Tor exit list 由 Tor Project提供, Inc and licensed under [CC BY 3.0 US](https://creativecommons.org/licenses/by/3.0/us/), available from [https://www.torproject.org](https://www.torproject.org)
 
-原文连结：
+原文链接：
 [https://github.com/aws-samples/siem-on-amazon-opensearch-service/blob/main/README.md](https://github.com/aws-samples/siem-on-amazon-opensearch-service/blob/main/README.md)
